@@ -1,0 +1,6 @@
+@PusatPromoWebAPI_HostAddress = http://localhost:5228
+
+GET {{PusatPromoWebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
