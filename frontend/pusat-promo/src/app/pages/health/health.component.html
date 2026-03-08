@@ -1,0 +1,13 @@
+<section class="health-page">
+  <h1>Backend Health Check</h1>
+  <p>Endpoint: <code>http://localhost:8080/ping</code></p>
+  <button (click)="check()" [disabled]="loading">
+    {{ hasFetched ? 'Refresh' : 'Get health' }}
+  </button>
+
+  <div *ngIf="loading">Loading…</div>
+
+  <pre *ngIf="result">{{ result }}</pre>
+
+  <div *ngIf="error" class="health-error">Error: {{ error }}</div>
+</section>
